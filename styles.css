@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Press+Start+2P&family=Rock+Salt&display=swap");
+
+#all {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: "Balsamiq Sans", cursive;
+}
+
+#logo {
+    color: rgb(212, 3, 29);
+    font-family: "Rock Salt", cursive;
+    font-size: 300%;
+}
+
+#subtitle {
+    font-size: 200%;
+}
+
+.center {
+    text-align: center;
+}
+
+.grid {
+    /* display: grid;
+    grid-template-columns: grid-auto-columns;
+    grid-template-rows: 1fr;
+    place-items: center; */
+    height: 100%;
+    margin: 50px 25px;
+    padding: 5px 100px;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
