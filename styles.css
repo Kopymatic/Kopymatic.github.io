@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Press+Start+2P&family=Rock+Salt&display=swap");
 
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(212, 3, 29);
+}
+
+/* selected link */
+a:active {
+    color: rgb(212, 3, 29);
+}
+
 #all {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
