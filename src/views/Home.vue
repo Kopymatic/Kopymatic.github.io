@@ -72,31 +72,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Press+Start+2P&family=Rock+Salt&display=swap");
 
-/* unvisited link */
-a:link {
-    color: white;
-    text-decoration: underline;
-}
-
-/* visited link */
-a:visited {
-    color: white;
-}
-
-/* mouse over link */
-a:hover {
-    color: rgb(212, 3, 29);
-}
-
-/* selected link */
-a:active {
-    color: rgb(212, 3, 29);
-}
-
-a.no-underline {
-    text-decoration: none;
-}
-
 .invisiblelink {
     text-decoration: none;
 }
@@ -119,13 +94,18 @@ a.no-underline {
     grid-template-columns: grid-auto-columns;
     grid-template-rows: 1fr;
     place-items: center; */
-    height: 100%;
-    margin: 50px 25px;
-    padding: 5px 100px;
+    height: 110%;
+    margin: 1% 5%;
     display: grid;
     grid-gap: 20px;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 </style>
 

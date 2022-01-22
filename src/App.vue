@@ -35,7 +35,7 @@ a.no-underline {
 }
 
 button {
-    font-size: large;
+    font-size: medium;
     font-family: "Balsamiq Sans", cursive;
     border-color: rgb(212, 3, 29);
     border-width: 4px;
@@ -82,6 +82,6 @@ html {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-family: "Balsamiq Sans", cursive;
-    text-align: center;
+    /* text-align: center; */
 }
 </style>
