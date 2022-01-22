@@ -93,6 +93,10 @@ a:active {
     color: rgb(212, 3, 29);
 }
 
+a.no-underline {
+    text-decoration: none;
+}
+
 .invisiblelink {
     text-decoration: none;
 }
