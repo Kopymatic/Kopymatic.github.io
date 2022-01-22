@@ -1,3 +1,8 @@
+<template>
+    <router-view />
+</template>
+
+<style>
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Press+Start+2P&family=Rock+Salt&display=swap");
 
 /* unvisited link */
@@ -55,13 +60,6 @@ button:hover {
     height: 95%;
 }
 
-#all {
-    font-size: large;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: "Balsamiq Sans", cursive;
-}
-
 #subtitle {
     font-size: 200%;
 }
@@ -75,25 +73,15 @@ button:hover {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
-#return-link {
-    display: flex;
-    justify-content: center;
-}
-
 .center {
     text-align: center;
 }
 
-.grid {
-    /* display: grid;
-    grid-template-columns: grid-auto-columns;
-    grid-template-rows: 1fr;
-    place-items: center; */
-    height: 100%;
-    margin: 50px 25px;
-    padding: 5px 100px;
-    display: grid;
-    grid-gap: 20px;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+html {
+    font-size: large;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Balsamiq Sans", cursive;
+    text-align: center;
 }
+</style>

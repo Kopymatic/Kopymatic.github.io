@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html id="all">
-    <head>
-        <title>CookieClickerBot</title>
-        <link rel="stylesheet" href="../styles.css" />
-        <link rel="shortcut icon" href="../res/Kopy.png" type="image/x-icon" />
-    </head>
+<template>
     <body>
         <div>
             <div class="center">
-                <a class="no-underline" href="../index.html"><h1 id="logo">Kopymatic</h1></a>
+                <kopymatic-header> </kopymatic-header>
                 <h1 id="subtitle">CookieClickerBot</h1>
                 <p>
                     My second attempt at a discord bot. Unfinished. <br />Source code
                     <a href="https://github.com/Kopymatic/CookieClickerBot">here</a>
                 </p>
+                <return-home></return-home>
             </div>
 
             <p class="center"></p>
         </div>
     </body>
-</html>
+</template>
+
+<script>
+import ReturnHome from "@/components/ReturnHome.vue";
+import KopymaticHeader from "@/components/Header.vue";
+
+export default {
+    components: { ReturnHome, KopymaticHeader },
+};
+</script>
