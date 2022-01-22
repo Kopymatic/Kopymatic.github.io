@@ -4,7 +4,7 @@ import Funnyman from "@/views/Funnyman.vue";
 import CookieClicker from "@/views/CookieClicker.vue";
 import Carin from "@/views/Carin.vue";
 import twpDPlatformer from "@/views/2DPlatformer.vue";
-import PageNotFound from "@/views/PageNotFound.vue";
+// import PageNotFound from "@/views/PageNotFound.vue";
 
 const routes = [
     {
@@ -37,11 +37,11 @@ const routes = [
         component: twpDPlatformer,
     },
 
-    {
-        path: "/:catchAll(.*)*",
-        name: "PageNotFound",
-        component: PageNotFound,
-    },
+    // {
+    //     path: "/:catchAll(.*)*",
+    //     name: "PageNotFound",
+    //     component: PageNotFound,
+    // },
 ];
 
 const router = createRouter({

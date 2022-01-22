@@ -13,16 +13,12 @@ cd dist
 # echo 'www.example.com' > CNAME
 
 git init
-# git branch -m master deployed
-# git push -u origin deployed
-git branch 
 git add -A
-git commit -m "deploy"
-echo "I made it"
+git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
- git push -f git@github.com:Kopymatic/Kopymatic.github.io.git master
-echo "I made it"
+ git push -f git@github.com:Kopymatic/Kopymatic.github.io.git main
+
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
