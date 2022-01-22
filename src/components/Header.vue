@@ -6,6 +6,7 @@
 
 <style scoped>
 #logo {
+    text-decoration: none;
     color: rgb(212, 3, 29);
     font-family: "Rock Salt", cursive;
     font-size: 300%;
