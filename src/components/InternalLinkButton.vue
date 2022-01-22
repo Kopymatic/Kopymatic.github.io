@@ -1,10 +1,10 @@
 <template>
-    <a v-bind:href="link">
+    <router-link :to="{ path: link }">
         <button>
             <h1>{{ buttonText }}</h1>
             <p>{{ buttonDesc }}</p>
         </button>
-    </a>
+    </router-link>
 </template>
 
 <script>

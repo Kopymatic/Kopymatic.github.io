@@ -7,46 +7,44 @@
                 <div class="center">
                     <link-button
                         buttonText="Funnyman"
-                        link="Funnyman.vue"
+                        link="/funnyman/"
                         buttonDesc="My first discord bot.
                     Currently private."
                     >
                     </link-button>
                 </div>
                 <div class="center">
-                    <a href="projects/CookieClickerBot.html">
-                        <button>
-                            <h1>CookieClicker</h1>
-                            <p>My second attempt at a discord bot. Unfinished.</p>
-                        </button>
-                    </a>
+                    <link-button
+                        buttonText="CookieClicker"
+                        link="/cookieclickerbot/"
+                        buttonDesc="My second attempt at a discord bot. Unfinished."
+                    >
+                    </link-button>
                 </div>
                 <div class="center">
-                    <a href="projects/Carin.html">
-                        <button>
-                            <h1>Carin'</h1>
-                            <p>
-                                My second functional discord bot. Still actively being worked on.
-                                <br />Click me to add to you server!
-                            </p>
-                        </button>
-                    </a>
+                    <link-button
+                        buttonText="Carin'"
+                        link="/carin/"
+                        buttonDesc="My second functional discord bot. Still actively being worked on. 
+                        Click here to add to you server!"
+                    >
+                    </link-button>
                 </div>
                 <div class="center">
-                    <a href="projects/2DPlatformer.html">
-                        <button>
-                            <h1>2D Platformer</h1>
-                            <p>A 2D platformer made in Godot. Indefinitely suspended.</p>
-                        </button>
-                    </a>
+                    <link-button
+                        buttonText="2D Platformer"
+                        link="/2DPlatformer/"
+                        buttonDesc="2D platformer made in godot"
+                    >
+                    </link-button>
                 </div>
                 <div class="center">
-                    <a href="index.html">
-                        <button>
-                            <h1>This webpage!</h1>
-                            <p>This webpage is my latest project!</p>
-                        </button>
-                    </a>
+                    <link-button
+                        buttonText="This webpage!"
+                        link="/home/"
+                        buttonDesc="This is my latest project!"
+                    >
+                    </link-button>
                 </div>
             </div>
 
@@ -62,15 +60,11 @@
 </template>
 
 <script>
-import LinkButton from "@/components/LinkButton.vue";
+import LinkButton from "@/components/InternalLinkButton.vue";
 import KopyaticHeader from "@/components/Header.vue";
 
 export default {
     components: { LinkButton, KopyaticHeader },
-    name: "HelloWorld",
-    props: {
-        msg: String,
-    },
 };
 </script>
 
@@ -118,15 +112,6 @@ a.no-underline {
     grid-gap: 20px;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-}
-
-#return-link {
-    display: flex;
-    justify-content: center;
-}
-
-.center {
-    text-align: center;
 }
 
 .grid {
