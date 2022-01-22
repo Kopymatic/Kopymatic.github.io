@@ -1,5 +1,7 @@
 <template>
-    <a class="no-underline" href="../App.vue"><h1 id="logo">Kopymatic</h1></a>
+    <router-link to="/home">
+        <h1 id="logo">Kopymatic</h1>
+    </router-link>
 </template>
 
 <style scoped>
