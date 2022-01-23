@@ -6,6 +6,7 @@ import Carin from "@/views/Carin.vue";
 import twpDPlatformer from "@/views/2DPlatformer.vue";
 import PageNotFound from "@/views/PageNotFound.vue";
 import Hampter from "@/views/Hampter.vue";
+import About from "@/views/About.vue";
 
 const routes = [
     {
@@ -41,6 +42,11 @@ const routes = [
         path: "/hampter/",
         name: "Hampter",
         component: Hampter,
+    },
+    {
+        path: "/about/",
+        name: "About Me",
+        component: About,
     },
     {
         path: "/:catchAll(.*)*",

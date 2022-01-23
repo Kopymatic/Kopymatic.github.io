@@ -12,16 +12,16 @@
             />
             <link-button
                 class="item"
-                buttonText="CookieClicker"
-                link="/cookieclickerbot/"
-                buttonDesc="My second attempt at a discord bot. Unfinished."
+                buttonText="Carin'"
+                link="/carin/"
+                buttonDesc="My first public discord bot. Still actively being worked on. 
+                        Click here to add to your server!"
             />
             <link-button
                 class="item"
-                buttonText="Carin'"
-                link="/carin/"
-                buttonDesc="My second functional discord bot. Still actively being worked on. 
-                        Click here to add to your server!"
+                buttonText="CookieClicker"
+                link="/cookieclickerbot/"
+                buttonDesc="My second attempt at a discord bot. Unfinished."
             />
             <link-button
                 class="item"
@@ -35,6 +35,7 @@
                 link="/home/"
                 buttonDesc="This is my latest project!"
             />
+            <link-button class="item" buttonText="About me" link="/about/" buttonDesc="" />
         </div>
 
         <div class="center">
@@ -44,15 +45,18 @@
             </router-link>
             <p>Note: I did not make hampter.</p>
         </div>
+
+        <socials-footer />
     </div>
 </template>
 
 <script>
 import LinkButton from "@/components/InternalLinkButton.vue";
 import KopyaticHeader from "@/components/Header.vue";
+import SocialsFooter from "@/components/SocialsFooter.vue";
 
 export default {
-    components: { LinkButton, KopyaticHeader },
+    components: { LinkButton, KopyaticHeader, SocialsFooter },
 };
 </script>
 

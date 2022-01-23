@@ -39,10 +39,12 @@
             <return-home></return-home>
             <div id="container">
                 <link-button
+                    class="item"
                     buttonText="V2 Source code"
                     link="https://github.com/Kopymatic/FunnymanBot"
                 />
                 <link-button
+                    class="item"
                     buttonText="V3 WIP Source code"
                     link="https://github.com/Kopymatic/Funnyman"
                 />

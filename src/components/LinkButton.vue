@@ -1,6 +1,6 @@
 <template>
     <a v-bind:href="link">
-        <base-button :buttonText="buttonText" :buttonDesc="buttonDesc"></base-button>
+        <base-button :buttonText="buttonText" :buttonDesc="buttonDesc"> <slot /> </base-button>
     </a>
 </template>
 

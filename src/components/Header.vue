@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/home" id="noUnderline">
+    <router-link to="/home" id="noUnderline" class="center">
         <h1 id="logo">Kopymatic</h1>
     </router-link>
 </template>

@@ -1,5 +1,6 @@
 <template>
     <button>
+        <slot />
         <h1>{{ buttonText }}</h1>
         <p>{{ buttonDesc }}</p>
     </button>
