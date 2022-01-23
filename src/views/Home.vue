@@ -2,49 +2,39 @@
     <div class="center">
         <kopyatic-header> </kopyatic-header>
         <h1 id="subtitle">I'm an indie developer. Here are some of my projects.</h1>
-        <div class="grid">
-            <div class="center">
-                <link-button
-                    buttonText="Funnyman"
-                    link="/funnyman/"
-                    buttonDesc="My first discord bot.
+        <div id="container">
+            <link-button
+                class="item"
+                buttonText="Funnyman"
+                link="/funnyman/"
+                buttonDesc="My first discord bot.
                     Currently private."
-                >
-                </link-button>
-            </div>
-            <div class="center">
-                <link-button
-                    buttonText="CookieClicker"
-                    link="/cookieclickerbot/"
-                    buttonDesc="My second attempt at a discord bot. Unfinished."
-                >
-                </link-button>
-            </div>
-            <div class="center">
-                <link-button
-                    buttonText="Carin'"
-                    link="/carin/"
-                    buttonDesc="My second functional discord bot. Still actively being worked on. 
+            />
+            <link-button
+                class="item"
+                buttonText="CookieClicker"
+                link="/cookieclickerbot/"
+                buttonDesc="My second attempt at a discord bot. Unfinished."
+            />
+            <link-button
+                class="item"
+                buttonText="Carin'"
+                link="/carin/"
+                buttonDesc="My second functional discord bot. Still actively being worked on. 
                         Click here to add to your server!"
-                >
-                </link-button>
-            </div>
-            <div class="center">
-                <link-button
-                    buttonText="2D Platformer"
-                    link="/2DPlatformer/"
-                    buttonDesc="2D platformer made in godot"
-                >
-                </link-button>
-            </div>
-            <div class="center">
-                <link-button
-                    buttonText="This webpage!"
-                    link="/home/"
-                    buttonDesc="This is my latest project!"
-                >
-                </link-button>
-            </div>
+            />
+            <link-button
+                class="item"
+                buttonText="2D Platformer"
+                link="/2DPlatformer/"
+                buttonDesc="2D platformer made in godot"
+            />
+            <link-button
+                class="item"
+                buttonText="This webpage!"
+                link="/home/"
+                buttonDesc="This is my latest project!"
+            />
         </div>
 
         <div class="center">
@@ -70,13 +60,22 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Press+Start+2P&family=Rock+Salt&display=swap");
 
-.grid {
-    height: 100%;
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     margin: 1% 5% 10% 5%;
-    gap: 25px;
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+}
+
+.item {
+    flex: 1 1 32%;
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        flex-direction: column;
+    }
 }
 
 #hampter {

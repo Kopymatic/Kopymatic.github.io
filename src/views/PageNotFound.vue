@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="center">
         <kopymatic-header> </kopymatic-header>
         <h1>404 - Page Not Found</h1>
         <p>This page no longer exists or was moved to another location.</p>
