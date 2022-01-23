@@ -5,6 +5,7 @@ import CookieClicker from "@/views/CookieClicker.vue";
 import Carin from "@/views/Carin.vue";
 import twpDPlatformer from "@/views/2DPlatformer.vue";
 import PageNotFound from "@/views/PageNotFound.vue";
+import Hampter from "@/views/Hampter.vue";
 
 const routes = [
     {
@@ -36,7 +37,11 @@ const routes = [
         name: "2D Platformer",
         component: twpDPlatformer,
     },
-
+    {
+        path: "/hampter/",
+        name: "Hampter",
+        component: Hampter,
+    },
     {
         path: "/:catchAll(.*)*",
         name: "PageNotFound",
