@@ -27,12 +27,14 @@ button {
     width: 100%;
     height: 100%;
     transition-duration: 0.3s;
+    transition-property: background-image, width, height;
     background-color: rgb(48, 48, 48);
     color: white;
 }
 
 button:hover {
-    background-color: black;
+    background-color: transparent;
+    background-image: linear-gradient(to top, black 70%, rgb(212, 3, 29));
     width: 102%;
     height: 102%;
 }

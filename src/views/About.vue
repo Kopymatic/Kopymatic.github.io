@@ -83,7 +83,7 @@ export default {
 }
 
 .item2 {
-    flex: 1 1 24%;
+    flex: 1 1 20%;
 }
 
 @media screen and (max-width: 800px) {

@@ -44,7 +44,7 @@ a.no-underline {
 
 html {
     font-size: large;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(black, rgb(48, 48, 48));
     color: rgb(255, 255, 255);
     font-family: "Balsamiq Sans", cursive;
     /* text-align: center; */
